@@ -19,7 +19,9 @@
     </v-toolbar>
 
     <v-content>
+      <my-weather />
       <my-shipping-calculator />
+
     </v-content>
 
     <my-footer />
@@ -28,9 +30,11 @@
 </template>
 
 <script>
+import axios from 'axios';
 import MyFooter from '@/components/MyFooter';
 import MyMenu from '@/components/MyMenu';
 import MyShippingCalculator from '@/components/MyShippingCalculator';
+import MyWeather from '@/components/MyWeather';
 
 export default {
   name: 'App',
@@ -38,6 +42,7 @@ export default {
     MyFooter,
     MyMenu,
     MyShippingCalculator,
+    MyWeather,
   },
   data() {
     return {

@@ -28,7 +28,7 @@ const apolloProvider = new VueApollo({
 Vue.use(VueApollo);
 Vue.use(Vuetify, {
   theme: {
-    primary: colors.green.accent3,
+    primary: colors.blue.lighten1,
   },
 });
 
