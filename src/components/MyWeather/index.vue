@@ -12,19 +12,20 @@ import myWetter from './display';
 import myActions from './actions';
 
 export default {
-  el: '#my-weather',
   name: 'MyWeather',
   components: {
       'display': myWetter,
       'actions': myActions
   },
 
-  data: {
-    Title: 'Wetter',
-    dataApi: 'aae97860de78632108ecc73036d6d17c',
-    cityName: 'madrid',
-    lang: 'de',
-    weatherRes: null
+  data() {
+    return {
+      Title: 'Wetter',
+      dataApi: 'aae97860de78632108ecc73036d6d17c',
+      cityName: 'Madrid',
+      lang: 'de',
+      weatherRes: null,
+    };
   },
   
   // GET DATA WHEN MOUNTED
@@ -41,7 +42,7 @@ export default {
       ctx.performAJAX();
     },
     
-    // GET WEATHER DATA
+    // GET WEATHER DATA                     
     performAJAX(){
       var ctx = this;
     
@@ -58,3 +59,8 @@ export default {
   }
 }
 </script>
+<style>
+  #my-weather{
+    text-align: center;
+  }
+</style>

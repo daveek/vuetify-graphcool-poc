@@ -1,14 +1,18 @@
 <template>
-  <section class="actions">
-    <div class="togglSearch" v-bind:class="{'active': isSearching}" @click="isSearching = ! isSearching">
-      <span v-if="!isSearching">Search</span>
-      <span v-else>Close</span>
-    </div>
-    <div v-bind:class="{'active': isSearching}" class="panel"> 
-      <input type="text" v-model="location">
-      <button @click="search"><i class="material-icons">search</i></button> 
-    </div>
-  </section>
+  <section class="display">
+      <h2>{{ res.name }}, {{ res.sys.country }}</h2>
+      <h5>
+        <span>Lat:</span> {{ res.coord.lat }}
+        <span>Lon: {{ res.coord.lon }}</span>
+      </h5>
+      <div class="condition">
+        <div class="temp">{{ temperature }}°C</div>
+        <img v-bind:src="'https://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/widgets/' + res.weather[0].icon + '.png'" 
+               v-bind:alt="'Weather in ' + res.name" 
+               width="128" height="128">
+        <p class="text">{{ res.weather[0].description }}</p>
+      </div>
+    </section>
 </template>
 
 <script>
