@@ -2,8 +2,9 @@
 <div id="my-weather">
    <h3>{{ Title }}</h3>
     <display v-bind:res="weatherRes"></display>
-    <actions v-bind:location="cityName" @search="searchcity"></actions>
+    <actions v-bind:location="cityName" @search="searchcity"></actions> 
 </div>
+
 </template>
 
 <script>
@@ -15,16 +16,15 @@ export default {
   name: 'MyWeather',
   components: {
       'display': myWetter,
-      'actions': myActions
+      'actions': myActions,
   },
-
   data() {
     return {
-      Title: 'Wetter',
+      Title: 'Das Wetter',
       dataApi: 'aae97860de78632108ecc73036d6d17c',
       cityName: 'Madrid',
       lang: 'de',
-      weatherRes: null,
+      weatherRes: null
     };
   },
   

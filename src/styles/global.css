@@ -5,11 +5,11 @@
 }
 
 .sometitle-logo:before {
-  content: 'some';
+  content: 'Dave';
   font-weight: 300;
 }
 
 .sometitle-logo:after {
-  content: 'title';
-  font-weight: 700;
+  content: 'Rojas';
+  font-weight: 600;
 }

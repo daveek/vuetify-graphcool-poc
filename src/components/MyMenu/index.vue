@@ -50,19 +50,19 @@ export default {
   props: {
     value: {
       type: Boolean,
-      default: false,
+      default: true,
     },
   },
   data() {
     return {
       items: [
         {
-          title: 'Mailbox',
-          href: '#',
+          title: 'Skills',
+          href: '/skills',
         },
         {
-          title: 'My address',
-          href: '#',
+          title: 'Shipping',
+          href: '/shipping',
         },
         {
           title: 'In progress',

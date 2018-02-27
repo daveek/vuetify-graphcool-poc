@@ -2,6 +2,7 @@ import 'vuetify/dist/vuetify.min.css';
 import Vue from 'vue';
 import Vuetify from 'vuetify';
 import colors from 'vuetify/es5/util/colors';
+import router from './router/index.js';
 
 import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
@@ -37,6 +38,7 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  router,
   apolloProvider,
   render: h => h(App),
 });

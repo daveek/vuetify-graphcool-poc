@@ -39,7 +39,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Phasellus eu nunc ut justo lacinia feugiat.
             Ut vel luctus sem, finibus luctus nunc.
-            <div class="mt-2">@SomeTitle, LLC</div>
+            <div class="mt-2">@DaveRojas, LLC</div>
           </div>
 
         </v-flex>

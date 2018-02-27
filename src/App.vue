@@ -19,9 +19,12 @@
     </v-toolbar>
 
     <v-content>
+      <router-view></router-view>
+      <!-- 
       <my-weather />
-      <my-shipping-calculator />
-
+      <my-shipping-calculator /> 
+      <my-chart-skills />
+      -->
     </v-content>
 
     <my-footer />
@@ -33,16 +36,18 @@
 import axios from 'axios';
 import MyFooter from '@/components/MyFooter';
 import MyMenu from '@/components/MyMenu';
-import MyShippingCalculator from '@/components/MyShippingCalculator';
-import MyWeather from '@/components/MyWeather';
+//import MyShippingCalculator from '@/components/MyShippingCalculator';
+//import MyWeather from '@/components/MyWeather';
+//import MyChartSkills from '@/components/MyChartSkills';
 
 export default {
   name: 'App',
   components: {
     MyFooter,
     MyMenu,
-    MyShippingCalculator,
-    MyWeather,
+    //MyShippingCalculator,
+    //MyWeather,
+    //MyChartSkills
   },
   data() {
     return {

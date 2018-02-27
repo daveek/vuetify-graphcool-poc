@@ -8,8 +8,8 @@
       <div class="condition">
         <div class="temp">{{ temperature }}°C</div>
         <img v-bind:src="'https://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/widgets/' + res.weather[0].icon + '.png'" 
-               v-bind:alt="'Weather in ' + res.name" 
-               width="128" height="128">
+               v-bind:alt="'Weather in ' + res.name"
+               width="168" height="168">
         <p class="text">{{ res.weather[0].description }}</p>
       </div>
     </section>
